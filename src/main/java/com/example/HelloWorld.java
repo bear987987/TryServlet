@@ -8,11 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(
-        name = "HelloWorld",
-        urlPatterns = {"/practiceServlet"}, // 等等要把這串敲在網頁根目錄之後
-        loadOnStartup = 1
-)
 public class HelloWorld extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
